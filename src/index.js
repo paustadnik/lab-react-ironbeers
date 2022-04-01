@@ -5,15 +5,18 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import { Home } from './components/Home';
+import { Beers } from './routes/Beers';
+import { RandomBeer } from './routes/RandomBeer';
+import { NewBeer } from './routes/NewBeer';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/beers" element={} />
-        <Route path="/randombeer" element={} />
-        <Route path="/newbeer" element={} /> */}
+        <Route path="/beers" element={<Beers />} />
+        <Route path="/random-beer" element={<RandomBeer />} />
+        <Route path="/new-beer" element={<NewBeer />} />
         
       </Routes>
     </BrowserRouter>

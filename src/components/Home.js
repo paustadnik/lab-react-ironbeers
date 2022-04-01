@@ -2,9 +2,11 @@ import { Link } from "react-router-dom"
 import Beers from "../assets/beers.png"
 import NewBeer from "../assets/new-beer.png"
 import RandomBeer from "../assets/random-beer.png"
+import { Navigation } from "./Navigation"
 
 export function Home() {
   return (
+    
     <div className="homeContainer"> 
       <div className="homeSectionContainer">
         <img src={Beers}/>
