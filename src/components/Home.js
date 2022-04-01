@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import BeersImg from "../assets/beers.png"
 import NewBeerImg from "../assets/new-beer.png"
 import RandomBeerImg from "../assets/random-beer.png"
+import { RandomBeer } from "../routes/RandomBeer"
 
 
 export function Home() {
@@ -16,7 +17,7 @@ export function Home() {
 
       <div className="homeSectionContainer">
         <img src={RandomBeerImg} alt='beer'/>
-        <Link to="/random-beer" className="title"><h2>Random Beer</h2></Link>
+        <Link to="/random-beer" className="title"element={<RandomBeer />} ><h2>Random Beer</h2></Link>
         <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
       </div> 
 
