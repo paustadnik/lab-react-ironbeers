@@ -8,6 +8,7 @@ import { Home } from './components/Home';
 import { Beers } from './routes/Beers';
 import { RandomBeer } from './routes/RandomBeer';
 import { NewBeer } from './routes/NewBeer';
+import { Beer } from './routes/Beer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/beers" element={<Beers />} />
+        <Route path="/beers/:id" element={<Beer />} />
         <Route path="/random-beer" element={<RandomBeer />} />
         <Route path="/new-beer" element={<NewBeer />} />
         

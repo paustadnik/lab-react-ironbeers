@@ -39,3 +39,51 @@ code {
 .icon {
   color: white;
 }
+
+.beerList {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.beerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  
+}
+
+.beerName {
+  font-size: 1.1em;
+}
+
+.beerTagline {
+  color: gray;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.beerCreator {
+  font-size: 12px;
+}
+
+.detailTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailBeerInfo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
